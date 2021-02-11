@@ -1,0 +1,20 @@
+.tab-col-yel{
+background-color: yellow;
+color:#00FF0C;
+border-radius: 10px;
+text-align: center;
+  }
+
+  #tab{
+    text-align: right;
+    color:yellow;
+  }
+
+  .tab-col-red{
+  background-color: red;
+  border-radius: 10px;
+    }
+
+    h1{
+      text-shadow: 5px 5px #00FF0C;
+    }
