@@ -18,3 +18,20 @@ text-align: center;
     h1{
       text-shadow: 5px 5px #00FF0C;
     }
+
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+    padding: 3px;
+    }
+
+    #thctr{
+    text-align: center;
+    }
+
+    p.hor {
+    writing-mode: vertical-rl;
+    }
