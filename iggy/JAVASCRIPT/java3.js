@@ -13,6 +13,11 @@ function myFunction2(){
   x.style.color="blue";
 }
 
+function Hello(){
+  let x=document.getElementById("igor");
+  x.style.color="purple";
+}
+
 // DO MATH
 
 function doMath(){
