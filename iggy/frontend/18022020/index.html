@@ -9,6 +9,23 @@
 </head>
 <body>
 
+<style>
+.Light-mode{
+  background-color: white;
+  color:black;
+  border: 1px dashed white;
+}
+
+.Night-mode{
+background-color: black;
+color:white;
+border: 1px dashed white;
+
+}
+
+</style>
+
+
 <div id="alert">ATTENTION!</div>
 <button id="button" onclick="myFunction()">POP UP WINDOW</button>
 
@@ -22,20 +39,19 @@
 <input type="text" id="myInput">
 <button onclick="getmyinput()">ADD</button>
 <button onclick="deletemyinput()">DELETE</button><br><br>
-<p id="demo" style="color:red"></p>
+
 
 <input type="text" id="myInput1">
 <button onclick="getmyinput1()">ADD</button>
 <button onclick="deletemyinput1()">DELETE</button><br><br>
 
-<input type="text" id="myInput2">
-<button onclick="getmyinput2()">ADD</button>
-<button onclick="deletemyinput2()">DELETE</button><br><br>
+<button onclick="myFunction1()">Light mode</button>
+<button onclick="myFunction2()">Dark mode</button>
 
-<input type="text" id="myInput3">
-<button onclick="getmyinput3()">ADD</button>
-<button onclick="deletemyinput3()">DELETE</button><br><br>
+<button onclick="myFunction3()">Switch</button>
 
+<p id="demo" style="color:red"></p>
+<p id="demo1" style="color:blue"></p>
 
 
 
