@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<style>
+  body{
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: top right;
+  }
+  .hovereffect1{
+    cursor:default;
+    position: relative;
+    overflow: hidden;
+    height:370px;
+    float:center;
+    padding:0;
+  }
+
+  .hovereffect1 img{
+  max-width: none;
+  width: calc(100%);
+  -webkit-transition: opacity 0.35s, -webkit-transform 1s;
+  transition: opacity 0.35s, transform 1s;
+  -webkit-transform: translate3d(0, -80px,0);
+  /* transform: translate(0, -80px, 0); */
+  transform: scale(0.97);
+  }
+
+  .hovereffect1:hover img{
+  opacity: 0.9;
+  -webkit-transform: translate3d(0 0,0);
+  transform: translate3d(0,0,0);
+  }
+
+  /* move infinity */
+  #img1{
+  position: relative;
+  animation: move 5s forwards;
+  }
+  .img1{
+    width:100%;
+    height:auto;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .registerbtn:hover {
+    opacity: 1;
+  }
+
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  </style>
+
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  </script>
+
+
+
+
+
+  <title>Control</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+      <div class="row" style=" background-color:grey">
+          <div style="width= 100%; height: 30px; background-color:grey">
+
+<button type="button" class="btn btn-primary" margin=""><a href="index1.html" target="_blank" data-toggle="tooltip" data-placement="right" title="Hello">index 1</a></button>
+<button type="button" class="btn btn-primary"><a href="reg.html" target="_blank _blank" data-toggle="tooltip" data-placement="right" title="Hello">Register</a></button>
+<button type="button" class="btn btn-primary"><a href="login.html" target="_blank" data-toggle="tooltip" data-placement="right" title="Hello">Login</a></button>
+    <!-- <a href="#" data-toggle="tooltip" data-placement="right" title="Hello">Tooltip</a> -->
+</div>
+</div>
+</div>
+
+
+
+  <div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+  A more modern approach, instead of downloading and hosting jQuery yourself, is to include it from a CDN (Content Delivery Network).
+  There are many CDN's out there, including ones from Google and Microsoft, who are hosting several different versions of
+  jQuery and other JavaScript frameworks. It saves you from having to download and store the jQuery framework, but it has
+  when people reaches your website and their browser requests the jQuery framework, it may already be in the cache, because
+  another website is using the exact same version and file. Besides that, most CDN's will make sure that once a user requests
+  a file from it, it's served from the server closest to them, so your European users won't have to get the
+  file all the way from the US and so on. You can use jQuery from a CDN just like you would do with the downloaded version,
+  only the URL changes. For instance, to include jQuery 3.3.1 from Google, you would write the following:
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="profile">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              Last Christmas I gave you my heart
+              But the very next day you gave it away
+              This year, to save me from tears
+              I'll give it to someone special
+              Last Christmas I gave you my heart
+              But the very next day you gave it away (you gave it away)
+              This year, to save me from tears
+              I'll give it to someone special (special)
+              Once bitten and twice shy
+              I keep my distance, but you still catch my eye
+              Tell me baby, do you recognize me?
+              Well, it's been a year, it doesn't surprise me
+              "Merry Christmas" I wrapped it up and sent it
+              With a note saying "I love you", I meant it
+              Now I know what a fool I've been
+              But if you kissed me now, I know you'd fool me again
+              Last Christmas I gave you my heart
+              But the very next day you gave it away (you gave it away)
+              This year, to save me from tears
+              I'll give it to someone special (special)
+              Last Christmas I gave you my heart
+              But the very next day you gave it away
+              This year, to save me from tears
+              I'll give it to someone special (special)
+
+              </div>
+            </div>
+          </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="messages">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              But the very next day you gave it away
+              This year, to save me from tears
+              I'll give it to someone special (special)
+              Ohh
+              Oh, oh, baby
+              A crowded room, friends with tired eyes
+              I'm hiding from you and your soul of ice
+              My God, I thought you were someone to rely on
+              Me? I guess I was a shoulder to cry on
+              A face on a lover with a fire in his heart
+              A man under cover but you tore me apart
+              Ooh, ooh, now I've found a real love
+              You'll never fool me again
+              Last Christmas I gave you my heart
+              But the very next day you gave it away (you gave it away)
+              This year, to save me from tears
+              I'll give it to someone special (special)
+              Last Christmas I gave you my heart
+              But the very next day you gave it away
+              This year, to save me from tears
+              I'll give it to someone special
+              Special
+
+              </div>
+            </div>
+          </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="settings">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              I'll give it to someone special (special)
+              Ohh
+              Oh, oh, baby
+              A crowded room, friends with tired eyes
+              I'm hiding from you and your soul of ice
+              My God, I thought you were someone to rely on
+              Me? I guess I was a shoulder to cry on
+              A face on a lover with a fire in his heart
+              A man under cover but you tore me apart
+              Ooh, ooh, now I've found a real love
+              You'll never fool me again
+              Last Christmas I gave you my heart
+              But the very next day you gave it away (you gave it away)
+              This year, to save me from tears
+              I'll give it to someone special (special)
+              Last Christmas I gave you my heart
+              But the very next day you gave it away
+              This year, to save me from tears
+              I'll give it to someone special
+              Special
+              A face on a lover with a fire in his heart (I gave you mine)
+              A man under cover but you tore him apart
+              Maybe next year we'll give it to someone
+              I'll give it to someone special
+              Special
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+    <a href="#" data-toggle="tooltip" data-placement="right" title="Hello">Tooltip</a>
+  </div>
+
+
+
+
+  <main>
+    <section>
+      <h1 style="background-color:powderblue">MY PHOTOS</h1>
+      <pre>
+        <div class="container-fluid">
+        <div class="row">
+          <div class="hovereffect1">
+        <img class="img1"><a href="../CSS/beach.jpg" target="_blank">
+            <img width="220" height="250" border="0" align="center"  src="../CSS/beach.jpg">
+          </a>
+
+          </div>
+
+
+
+          <div class="hovereffect1">
+        <img class="img1" src="../CSS/beach.jpg" alt="beach"></a>
+          </div>
+
+          <div class="hovereffect1">
+        <img class="img1" src="../CSS/beach.jpg" alt="beach"></a>
+          </div>
+
+          <div class="hovereffect1">
+        <img class="img1" src="../CSS/beach.jpg" alt="beach"></a>
+          </div>
+
+          </div>
+        </div>
+      </pre>
+    </section>
+
+
+</body>
+</html>
