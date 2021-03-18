@@ -1,36 +1,15 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
-body
-{
-  margin: 0;
-  padding: 0;
-
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
 #menuToggle
 {
+
+  margin: 0;
+  padding: 0;
   display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-
+  position: fixed;
+  top: 35px;
+  left: 96%;
   z-index: 1;
+  transform: translate(-50%, -50%);
 
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 #menuToggle a
@@ -61,12 +40,9 @@ body
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
 
-  -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+
 #menuToggle span
 {
   display: block;
@@ -97,15 +73,12 @@ body
   transform-origin: 0% 100%;
 }
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  /* background: #232323; */
 }
 
 /*
@@ -114,7 +87,7 @@ body
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  /* transform: rotate(0deg) scale(0.2, 0.2); */
 }
 
 /*
@@ -133,10 +106,10 @@ body
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -300px;
   padding: 70px;
   padding-top: 125px;
-
+  left: -40px;
   background: #ededed;
   list-style-type: none;
   opacity: 50%;
@@ -144,21 +117,26 @@ body
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
+  transform: translate(0%, 0);
+  opacity: 0;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 20px;
+  font-family: tahoma;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul
 {
-  transform: none;
+  opacity: 0.9;
+  transition: 1s;
 }
+
+/* #menuToggle input:not(:checked) ~ ul
+{
+
+  transition: 0s;
+} */

@@ -23,6 +23,32 @@ border: 1px dashed white;
 
 }
 
+.hovereffect1{
+  cursor:default;
+  position: relative;
+  overflow: hidden;
+  width:468px;
+  height:370px;
+  float:left;
+  padding:0;
+}
+
+.hovereffect1 img{
+max-width: none;
+width: calc(100%);
+-webkit-transition: opacity 0.35s, -webkit-transform 1s;
+transition: opacity 0.35s, transform 1s;
+-webkit-transform: translate3d(0, -80px,0);
+/* transform: translate(0, -80px, 0); */
+transform: scale(0.95);
+}
+
+.hovereffect1:hover img{
+opacity: 0.9;
+-webkit-transform: translate3d(0 0,0);
+transform: translate3d(0,0,0);
+}
+
 </style>
 
 
