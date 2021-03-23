@@ -10,6 +10,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="1css.css">
 <style>
+
+html{
+  scroll-behavior: smooth;
+}
 body{
 background-color: black;
   background-repeat: no-repeat;
@@ -110,31 +114,7 @@ a:hover{
 }
 
 
-
 </style>
-
-<!-- <style media="screen">
-  .parallax1{
-    background-image: url("../CSS/beach.jpg");
-    min-height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .parallax2{
-    background-image: url("../CSS/forrest.jpg");
-    min-height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .text{
-    height: 300px;
-    background-color: rgba(255, 0, 0, 0.5);
-
-  }
-</style> -->
 
 
   <title>HOME</title>
@@ -144,10 +124,8 @@ a:hover{
 <body>
 
 
-<!-- <div style="width: 100%; height:15px; background-color:black; padding: 15px; margin-left:0; float:left; margin-right:0;float:right; margin:0; float:0; margin-bottom:5px"></div>
-<div style="width: 100%; height:15px; background-color:black; padding: 15px; margin-left:0; float:left; margin-right:0;float:right; margin:0; float:0"></div> -->
 
-  <div class="container-fluid" style="padding:1;">
+  <div class="container-fluid">
   <div class="row" style="background-color: black;">
     <div class="col-md-1" style="background-color:black;">
       <img src="jlogo2.png" width="50px" height="50px" style="margin:10px">
@@ -174,21 +152,16 @@ a:hover{
     <div class="col-md-1">
       <nav>
         <div id="menuToggle">
-          <!--
-          A fake / hidden checkbox is used as click reciever,
-          so you can use the :checked selector on it.
-          -->
           <input id="myCheck" type="checkbox" />
           <span></span>
           <span></span>
           <span></span>
 
           <ul id="menu">
-            <a onclick="myFunction()" href="#mymusic"><li>MY MUSIC</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+          <li><a onclick="myFunction()" href="#mymusic">my music</a></li>
+            <li><a href="#"><li>about</a></li>
+            <li><a href="#"><li>info</a></li>
+            <li><a href="#"><li>contact</a></li>
           </ul>
         </div>
       </nav>
@@ -252,6 +225,54 @@ a:hover{
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color:grey"> -->
 
 
+<div class="parallax1"></div>
+<div class="aboutme">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+  <div class="col-md-4">
+  <img class="bioimg" src="../CSS/beach.jpg" alt="photo">
+    <img class="bioimg" src="../CSS/beach.jpg" alt="photo">
+</div>
+<div class="col-md-6">
+  <p class="biotext">From his first professional recording experience at Abbey Road Studios, aged seventeen, to tours, television and concert work with a stellar cast comprising Bryan Ferry, Rod Stewart, Joss Stone, Belinda Carlisle, Lily Allen and countless more, James Nisbet has honed his musical skills over more than twenty years across a range of disciplines and to international acclaim. In consistent demand as a session guitarist, both in the studio and on the road, he has also built a sound reputation as a producer, composer and songwriter.
+Born into the music business – .</p>
+<p class="biotext">his father published Bob Dylan, his mother worked for the Beatles at Apple – he discovered the guitar in infancy and has never looked back. Post-academic employment as an engineer at New York's Bearsville Studios led to sessions with Cindy Lauper, Yes and Bob Clearmountain. Since his return to the UK, he had devoted his life to writing, performing and producing music across all genres.
+Not only have his original compositions been performed by many high-profile rock and pop artists, but his commercial and TV clients include Mars, Kellogs, Oxo and GMTV. In addition, as a skilled and patient Musical Director, he has toured the globe with the greats.
+James is currently working on his own project 'SINNA'. Having played some well-received gigs on the recent Fun Loving Criminals tour, the band's first single is slated for release this year. In addition to his work with the Ailerons, the indie rock band featuring Dave Rowntree, drummer with Blur, James is an indispensable component of the popular acoustic line-up California Dreaming, who perform sell-out gigs all over London.
+He has also regularly MD'd the house band at Ronnie Scott's, with artists such as Jeff Beck, Bryan Adams and Chrissie Hynde</p>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="parallax2"></div>
+
+
+<div class="container" style="width:100%;height:300px; background-color: black">
+    <div class="row">
+        <div class="col-md-4">
+          <img src="jlogo2.png" width="100px" height="100px" style="margin:10px">
+          </div>
+
+  <div class="col-md-6 topnav">
+<a href="#mymusic">Menu</a>
+<a href="#mymusic">Menu</a>
+<a href="#mymusic">Menu</a>
+<a href="#mymusic">Menu</a>
+</div>
+
+<div class="col-md-2">
+<a href="http://www.facebook.com" target="_blank"><img class="iconimg" src="facebook.png"></a>
+
+</div>
+</div>
+</div>
+</div>
 
 
 

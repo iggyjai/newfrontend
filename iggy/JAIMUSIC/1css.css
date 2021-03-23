@@ -1,3 +1,23 @@
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 #menuToggle
 {
 
@@ -12,7 +32,7 @@
 
 }
 
-#menuToggle a
+/* #menuToggle a
 {
   text-decoration: none;
   color: #232323;
@@ -23,7 +43,7 @@
 #menuToggle a:hover
 {
   color: tomato;
-}
+} */
 
 
 #menuToggle input
@@ -78,30 +98,21 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  /* background: #232323; */
+
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
-  /* transform: rotate(0deg) scale(0.2, 0.2); */
+
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
+
 #menu
 {
   position: absolute;
@@ -110,7 +121,7 @@
   padding: 70px;
   padding-top: 125px;
   left: -40px;
-  background: #ededed;
+  background: rgba(255,255,255,0.5);
   list-style-type: none;
   opacity: 50%;
   -webkit-font-smoothing: antialiased;
@@ -120,14 +131,10 @@
   transform: translate(0%, 0);
   opacity: 0;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  border-radius: 2%;
 }
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 20px;
-  font-family: tahoma;
-}
+
 
 #menuToggle input:checked ~ ul
 {
@@ -135,8 +142,114 @@
   transition: 1s;
 }
 
-/* #menuToggle input:not(:checked) ~ ul
-{
 
-  transition: 0s;
-} */
+#menu a{
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  font-family: impact;
+  transition: .3s;
+  position:relative;
+}
+
+#menu li{
+  padding-bottom: 8px;
+
+}
+
+#menu a::after{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: .2s;
+}
+
+#menu a:hover::after{
+  width: 100%;
+}
+
+#menu a:hover{
+  color:black;
+}
+
+.parallax1{
+  background-image: url("../CSS/beach.jpg");
+  min-height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallax2{
+  background-image: url("../CSS/forrest.jpg");
+  min-height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.aboutme{
+width: 100%;
+height: 900px;
+background-image: linear-gradient(black, grey);
+}
+
+.text{
+  height: 300px;
+  background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+.biotext{
+  font-size: 20px;
+  font-family: cursive;
+  color:white;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.bioimg{
+  padding-top: 20px;
+}
+
+.topnav a{
+  color: white;
+  float: left;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.topnav a::after{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: all ease-in-out .2s;
+}
+
+.topnav a:hover::after{
+  width:60%;
+  height: 2px;
+  color:grey;
+}
+
+.iconimg{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+.iconimg:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
