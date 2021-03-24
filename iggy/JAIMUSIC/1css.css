@@ -5,12 +5,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: white;
 }
 
 /* Handle on hover */
@@ -138,7 +138,7 @@
 
 #menuToggle input:checked ~ ul
 {
-  opacity: 0.9;
+  opacity: 1;
   transition: 1s;
 }
 
@@ -176,15 +176,15 @@
 }
 
 .parallax1{
-  background-image: url("../CSS/beach.jpg");
+  background-image: url("pics/36.jpg");
   min-height: 700px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .parallax2{
-  background-image: url("../CSS/forrest.jpg");
-  min-height: 800px;
+  background-image: url("pics/par1.jpg");
+  min-height: 700px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -203,8 +203,8 @@ background-image: linear-gradient(black, grey);
 }
 
 .biotext{
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
   color:white;
   text-align: justify;
   padding-top: 20px;
@@ -212,6 +212,8 @@ background-image: linear-gradient(black, grey);
 
 .bioimg{
   padding-top: 20px;
+  width: 350px;
+  height: 250px;
 }
 
 .topnav a{
@@ -242,8 +244,8 @@ background-image: linear-gradient(black, grey);
 }
 
 .iconimg{
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   padding: 10px;
   margin-top: 10px;
 

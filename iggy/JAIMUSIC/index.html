@@ -41,15 +41,15 @@ position: relative;
 
 .img1{
   width: 470px;
-  height: auto;
+  height: 270px;
   transition: 1s;
   display: block;
 
 }
 
 .h1text{
-  font-size: 10em;
-  font-family: Brush Script MT; Brush Script Std, cursive;
+  font-size: 4em;
+  font-family: Roboto;
   position: center;
 }
 
@@ -83,7 +83,7 @@ a:hover{
 }
 
 .hovereffect1:hover{
-  opacity: 0.7;
+  opacity: 0.4;
   transition: 0.6s;
 }
 
@@ -93,21 +93,23 @@ a:hover{
 
 .textdecoration{
   width: auto;
-  color: white;
-  font-size: 20px;
+  color: red;
+  font-size: 30px;
   text-align: center;
   position: absolute;
+  font-family: 'Open Sans', sans-serif;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
 }
 
 .textdecoration2{
-  width: auto;
+  width: 100%;
   color: white;
   font-size: 20px;
   text-align: center;
   position: absolute;
+  margin-top: 30px;
   left: 50%;
   top: 50px;
   transform: translate(-50%, 0%);
@@ -117,7 +119,7 @@ a:hover{
 </style>
 
 
-  <title>HOME</title>
+  <title>JANKOVSKY HOME</title>
 
 </head>
 
@@ -127,27 +129,29 @@ a:hover{
 
   <div class="container-fluid">
   <div class="row" style="background-color: black;">
-    <div class="col-md-1" style="background-color:black;">
-      <img src="jlogo2.png" width="50px" height="50px" style="margin:10px">
+    <div class="col-md-4" style="background-color:black;">
+      <img src="pics/jlogo26.png" width="250px" height="50px" style="margin:10px">
         </div>
 
         <div class="col-md-1" style="background-color:black;">
-          <img src="jlogo2.png" width="50px" height="50px" style="margin:10px">
+          <a href="http://www.facebook.com/iggyjai" target="_blank"><img class="iconimg" src="pics/fbicon.png"></a>
             </div>
 
             <div class="col-md-1" style="background-color:black;">
-              <img src="jlogo2.png" width="50px" height="50px" style="margin:10px">
+                  <a href="http://www.instagram.com/iggyjai" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
                 </div>
 
                 <div class="col-md-1" style="background-color:black;">
-                  <img src="jlogo2.png" width="50px" height="50px" style="margin:10px">
+                      <a href="https://www.youtube.com/channel/UCAkIO9t_Q-N5rh3e4ODF8Lw" target="_blank"><img class="iconimg" src="pics/youtube.png"></a>
                     </div>
 
                     <div class="col-md-1" style="background-color:black;">
-                      <img src="jlogo2.png" width="50px" height="50px" style="margin:10px">
+                          <a href="https://open.spotify.com/user/yjdetkdiehrudxnrpyv73o5yh?si=_Qx2oEIGTsC1pcYqeyU0Tw" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
                         </div>
 
-<div class="col-md-6"></div>
+
+
+<div class="col-md-3"></div>
 
     <div class="col-md-1">
       <nav>
@@ -159,8 +163,7 @@ a:hover{
 
           <ul id="menu">
           <li><a onclick="myFunction()" href="#mymusic">my music</a></li>
-            <li><a href="#"><li>about</a></li>
-            <li><a href="#"><li>info</a></li>
+            <li><a onclick="myFunction()" href="#about"><li>biography</a></li>
             <li><a href="#"><li>contact</a></li>
           </ul>
         </div>
@@ -172,54 +175,95 @@ a:hover{
 
 <div class="video1">
   <video [muted]="true" autoplay playsinline loop muted>
-    <!-- <source src="jankovsky60sec.mp4" type="video/mp4"> -->
+    <!-- <source src="notext.mp4" type="video/mp4"> -->
   </video>
   <div class="videotext">
-    <h1 class="h1text">Welcome</h1>
+    <h1 class="h1text">Welcome.</h1>
   </div>
 </div>
 
-<h3 id="mymusic" style="color:white">MY MUSIC</h3>
+<h3 id="mymusic" style="color:white; font-family: sans-serif; margin-left: 10px;">COMMERCIAL WORK 2020-2021</h3>
 <br>
 
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/emperors.png" alt="beach">
     <div class="overlay">
-      <a class="textdecoration" href="www.youtube.com">Youtube</a>
-      <p class="textdecoration2">YoutubeYoutubeYoutubeYoutube</p>
+      <a class="textdecoration" href="https://youtu.be/4HgvpFuoNF8" target="_blank"><img src="pics/youtubeglow.png"></a>
+      <p class="textdecoration2">Credits: songwriter, music producer, mix engineer</p>
     </div>
   </div>
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/sftdprosto.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/65ljoG695J8" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: songwriter, music producer</p>
+  </div>
     </div>
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/sftdlovee.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/im3DITHNnNA" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: music producer, mix engineer</p>
+  </div>
     </div>
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/unomissu.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/ZuiUYR21rgo" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: songwriter, music producer, mix engineer, mastering</p>
+  </div>
     </div>
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/ziggathink.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/o8jtYbEOEaU" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: songwriter, music producer, mix engineer</p>
+  </div>
+    </div>
+
+
+    <div class="hovereffect1">
+  <img class="img1" src="pics/unoparadise.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/0_6MnZF9RwM" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: songwriter, music producer, mix engineer, mastering</p>
+  </div>
     </div>
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/unoalmost.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/V4cjGyCKXc0" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: music producer, mix engineer, mastering</p>
+  </div>
     </div>
 
     <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
-    </div>
-
-    <div class="hovereffect1">
-  <img class="img1" src="../CSS/beach.jpg" alt="beach">
+  <img class="img1" src="pics/jailove.png" alt="beach">
+  <div class="overlay">
+    <a class="textdecoration" href="https://youtu.be/VcbYxM1t67Y" target="_blank">Listen on YouTube</a>
+    <p class="textdecoration2">Credits: singer, songwriter, music producer, mix engineer, mastering</p>
+  </div>
     </div>
 
 <br><br>
+
+<h3 id="mymusic" style="color:white; font-family: sans-serif; margin-left: 10px;">JANKOVSKY ALBUM</h3>
+<br>
+
+<div class="hovereffect1">
+<img class="img1" src="pics/jailove.png" alt="beach">
+<div class="overlay">
+<a class="textdecoration" href="https://youtu.be/VcbYxM1t67Y" target="_blank">Listen on YouTube</a>
+<p class="textdecoration2">Credits: singer, songwriter, music producer, mix engineer, mastering</p>
+</div>
+</div>
+
 
 <!-- <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color:grey"> -->
@@ -231,16 +275,27 @@ a:hover{
   <div class="row">
     <div class="col-md-1"></div>
   <div class="col-md-4">
-  <img class="bioimg" src="../CSS/beach.jpg" alt="photo">
-    <img class="bioimg" src="../CSS/beach.jpg" alt="photo">
+  <img class="bioimg" src="pics/iggybio1.jpg" alt="photo">
+    <img class="bioimg" src="pics/iggybio2.jpg" alt="photo">
+    <img style="width: 350px; height:350px; padding-top: 20px;" src="pics/iggybio3.png" alt="photo">
 </div>
 <div class="col-md-6">
-  <p class="biotext">From his first professional recording experience at Abbey Road Studios, aged seventeen, to tours, television and concert work with a stellar cast comprising Bryan Ferry, Rod Stewart, Joss Stone, Belinda Carlisle, Lily Allen and countless more, James Nisbet has honed his musical skills over more than twenty years across a range of disciplines and to international acclaim. In consistent demand as a session guitarist, both in the studio and on the road, he has also built a sound reputation as a producer, composer and songwriter.
-Born into the music business – .</p>
-<p class="biotext">his father published Bob Dylan, his mother worked for the Beatles at Apple – he discovered the guitar in infancy and has never looked back. Post-academic employment as an engineer at New York's Bearsville Studios led to sessions with Cindy Lauper, Yes and Bob Clearmountain. Since his return to the UK, he had devoted his life to writing, performing and producing music across all genres.
-Not only have his original compositions been performed by many high-profile rock and pop artists, but his commercial and TV clients include Mars, Kellogs, Oxo and GMTV. In addition, as a skilled and patient Musical Director, he has toured the globe with the greats.
-James is currently working on his own project 'SINNA'. Having played some well-received gigs on the recent Fun Loving Criminals tour, the band's first single is slated for release this year. In addition to his work with the Ailerons, the indie rock band featuring Dave Rowntree, drummer with Blur, James is an indispensable component of the popular acoustic line-up California Dreaming, who perform sell-out gigs all over London.
-He has also regularly MD'd the house band at Ronnie Scott's, with artists such as Jeff Beck, Bryan Adams and Chrissie Hynde</p>
+  <h1 id="about" style="color:white; font-family:'Open Sans', sans-serif;">INTRODUCTION</h1><br>
+  <p class="biotext">JANKOVSKY (Igor Jankovski, also known as Iggy Jai) is an Estonian music producer, musician, former drummer for Ebony Bones. He worked and studied in London, UK from 2010-2020. He's a graduate of Abbey Road Institute in London (Advanced music production and sound engineering) and University of Tallinn (Orchestral conducting).
+
+​ </p>
+
+<p class="biotext">Not only did he learn the keys to a successful song in any genre be it pop, indie, hip hop or an entire movie score, he also gained priceless contacts reaching far and wide within the industry who are responsible for artists such as 'The Verve', 'U2', 'Sam Smith', 'The Cult', 'Dido' and many others. JANKOVSKY worked with artists from 'Let it Shine', 'X Factor UK', 'Red Bull Academy', 'VICE'. In addition to his production work, he has toured the world and performed on stages in USA, China, Russia, Europe, Australia and New Zealand, headlining venues such as Le Trianon (FRA), Berghain (GER), KOKO (UK), La Machine (FRA), Splore (NZ).
+
+</p>
+<p class="biotext">Up until recently JANKOVSKY has been working with bespoke artists by a private appointment only but now he's looking to expand and provide services to the broader public. His mission is to help up and coming artists to get the best out of their performance by crafting a unique and definitive sound for their songs, as well as presenting their finished product to record labels. He specialises in sound design, production, arrangement, recording, mixing and mastering.
+
+​​
+
+He has a full production studio at his disposal including a multi track mixer, guitars, midi keyboard, analog synthesizers, microphones, electronic drums, along with a good laptop and all the latest plugins. He works in Pro Tools and Logic.</p>
+<p class="biotext">
+As an artist/producer, he has discovered that music can be sincere when it’s guided by the true principles of the universe and nature. The greatest philosophers, composers, architects, representatives of art were inspired by the divine beauty and the meaning of life, whose ideas still find expression in architecture and visual arts, heritage and exemplary artistry that they left us.
+</p>
 </div>
 <div class="col-md-1"></div>
 </div>
@@ -253,26 +308,46 @@ He has also regularly MD'd the house band at Ronnie Scott's, with artists such a
 <div class="parallax2"></div>
 
 
-<div class="container" style="width:100%;height:300px; background-color: black">
+<div class="container" style="width:100%;height:150px; background-color: black">
     <div class="row">
         <div class="col-md-4">
-          <img src="jlogo2.png" width="100px" height="100px" style="margin:10px">
+          <img src="pics/jlogo26.png" width="250px" height="50px" style="margin-top:40px">
           </div>
 
-  <div class="col-md-6 topnav">
-<a href="#mymusic">Menu</a>
-<a href="#mymusic">Menu</a>
-<a href="#mymusic">Menu</a>
-<a href="#mymusic">Menu</a>
+
+
+
+<div style="margin-top:40px">
+  <div class="col-md-1" style="background-color:black;">
+    <a href="http://www.facebook.com/iggyjai" target="_blank"><img class="iconimg" src="pics/fbicon.png"></a>
+      </div>
+
+      <div class="col-md-1" style="background-color:black;">
+            <a href="http://www.instagram.com/iggyjai" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
+          </div>
+
+          <div class="col-md-1" style="background-color:black;">
+                <a href="https://www.youtube.com/channel/UCAkIO9t_Q-N5rh3e4ODF8Lw" target="_blank"><img class="iconimg" src="pics/youtube.png"></a>
+              </div>
+
+              <div class="col-md-1" style="background-color:black;">
+                    <a href="https://open.spotify.com/user/yjdetkdiehrudxnrpyv73o5yh?si=_Qx2oEIGTsC1pcYqeyU0Tw" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
+                  </div>
+
+
+                  <div class="col-md-4 topnav">
+                  <a href="#">Email</a>
+
+                  </div>
+</div>
 </div>
 
-<div class="col-md-2">
-<a href="http://www.facebook.com" target="_blank"><img class="iconimg" src="facebook.png"></a>
 
-</div>
-</div>
-</div>
-</div>
+
+  <p style="font-family: 'Open Sans', sans-serif; color: white; font-size: 10px;">©JANKOVSKY. All rights reserved 2021</p>
+
+
+
 
 
 
@@ -283,17 +358,6 @@ He has also regularly MD'd the house band at Ronnie Scott's, with artists such a
 </script>
 
 
-
-<!--
-<section>
-
-  <div class="parallax1">
-
-
-  </div>
-  <div class="text">Hello world!</div>
-  <div class="parallax2"></div>
-</section> -->
 
 
 
