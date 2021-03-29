@@ -10,7 +10,8 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: grey;
+    border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -122,7 +123,7 @@
   padding: 70px;
   padding-top: 125px;
   left: -40px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.8);
   list-style-type: none;
   opacity: 50%;
   -webkit-font-smoothing: antialiased;
@@ -173,7 +174,7 @@
 }
 
 #menu a:hover{
-  color:black;
+  color:tomato;
 }
 
 .parallax1{
@@ -182,9 +183,10 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
 }
 .parallax2{
-  background-image: url("pics/par1.jpg");
+  background-image: url("pics/45.jpg");
   min-height: 700px;
   background-position: center;
   background-size: cover;
@@ -258,6 +260,6 @@ background-image: linear-gradient(black, grey);
 }
 
 .iconimg:hover{
-  opacity: 0.9;
+  opacity: 0.7;
   cursor: pointer;
 }
