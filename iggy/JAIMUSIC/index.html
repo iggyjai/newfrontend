@@ -32,7 +32,7 @@
             </div>
 
             <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
-                  <a href="http://www.instagram.com/iggyjai" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
+                  <a href="http://www.instagram.com/iamjankovsky" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
                 </div>
 
                 <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
@@ -175,18 +175,17 @@
 <br>
 
 <div class="container-fluid">
-<div class="row">
-<div class="col-lg-3 col-md-3 colpad">
-<div class="hovereffect1">
-  <iframe class="img1" width="560" height="315" src="https://youtu.be/ThlS8JHeSH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 colpad">
+      <div class="hovereffect1">
+<iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/ThlS8JHeSH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="overlay">
 
-<div class="overlay">
-
-<p class="textdecoration2">Credits: artist, producer, mix engineer</p>
-</div>
-</div>
-</div>
-</div>
+        <p class="textdecoration2">Credits: artist, producer, mix engineer</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -207,6 +206,8 @@
 </div>
 <div class="col-md-6 col-sm-6">
   <h1 id="about" style="color:white; font-family:'Open Sans', sans-serif;">INTRODUCTION</h1><br>
+
+<div class="aboutme1">
   <p class="biotext">JANKOVSKY (Igor Jankovski, also known as Iggy Jai) is an Estonian music producer, musician, former drummer for Ebony Bones. He worked and studied in London, UK from 2010-2020. He's a graduate of Abbey Road Institute in London (Advanced music production and sound engineering) and University of Tallinn BA (Orchestral conducting).
 
 ​ </p>
@@ -223,9 +224,12 @@ He has a full production studio at his disposal. He works in Pro Tools and Logic
 As an artist/producer, he has discovered that music can be sincere when it’s guided by the true principles of the universe and nature. The greatest philosophers, composers, architects, representatives of art were inspired by the divine beauty and the meaning of life, whose ideas still find expression in architecture and visual arts, heritage and exemplary artistry that they left us.
 </p>
 <br>
-
 <p style="font-family:Brush Script MT; color: white; font-size: 25px; text-align: right;">Looking forward to working with you.</p>
 <p style="font-family:Brush Script MT; color: white; font-size: 25px; text-align: right;">Jankovsky</p>
+</div>
+
+
+
 
 
 </div>
@@ -242,7 +246,7 @@ As an artist/producer, he has discovered that music can be sincere when it’s g
 
 <div class="container-fluid" style="width:100%;height:100px; background-color: black">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-7 col-xs-0">
           <img src="pics/jlogo26.png" width="250px" height="50px" style="margin:20px">
           </div>
 
@@ -255,7 +259,7 @@ As an artist/producer, he has discovered that music can be sincere when it’s g
               </div>
 
               <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
-                    <a href="http://www.instagram.com/iggyjai" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
+                    <a href="http://www.instagram.com/iamjankovsky" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
                   </div>
 
                   <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
@@ -271,12 +275,19 @@ As an artist/producer, he has discovered that music can be sincere when it’s g
                   <a href="mailto:iggyjai@gmail.com" style="color: tomato;">Book a session</a>
 
                   </div>
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p style="width: 100%; height: auto; font-family: Roboto; color: white; font-size: 10px; text-align: center;">©JANKOVSKY. All rights reserved 2021</p>
+                  </div>
+                </div>
+              </div>
 </div>
 </div>
 
 
 
-  <p style="font-family: Roboto; color: white; font-size: 10px; text-align: center;">©JANKOVSKY. All rights reserved 2021</p>
 
 
 
@@ -287,6 +298,18 @@ As an artist/producer, he has discovered that music can be sincere when it’s g
     document.getElementById('myCheck').checked = false;
   }
 
+$(function(){
+  var span = $(".menuToggle");
+  $(window).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+
+        if(scrollTop>1250){
+        $(".parallax1").css("opacity", 0 + $(window).scrollTop()/ 2500);
+}
+        $(".parallax2").css("opacity", 0 + $(window).scrollTop()/ 2500);
+
+     });
+   });
 
 </script>
 

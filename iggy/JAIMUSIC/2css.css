@@ -46,7 +46,7 @@ position: relative;
 
 .h1text{
   font-size: 4em;
-  font-family: Roboto;
+  font-family: Train One;
   position: center;
 }
 
@@ -118,4 +118,10 @@ a:hover{
   left: 50%;
   top: 50px;
   transform: translate(-50%, 0%);
+}
+
+.aboutme1{
+  width: 100%;
+  max-height: 700px;
+  overflow: auto;
 }
