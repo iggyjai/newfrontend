@@ -4,15 +4,15 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: black;
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey;
-    border-radius: 5px;
+  border-radius: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.0);
+}
+
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -33,18 +33,6 @@
 
 }
 
-/* #menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-} */
 
 
 #menuToggle input
@@ -210,15 +198,11 @@
   background-attachment: fixed;
 }
 
+
 /* .responsive{
   width: 100%;
 } */
 
-.aboutme{
-width: 100%;
-height: auto;
-background-image: linear-gradient(black, grey);
-}
 
 .text{
   height: 300px;
@@ -226,14 +210,7 @@ background-image: linear-gradient(black, grey);
 
 }
 
-.biotext{
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  color:white;
-  text-align: justify;
-  padding-top: 20px;
-  margin-right: 15px;
-}
+
 
 .bioimg{
   padding-top: 20px;
@@ -245,14 +222,12 @@ background-image: linear-gradient(black, grey);
   color: white;
   float: left;
   text-align: center;
-  /* padding: 14px 50px; */
   text-decoration: none;
   font-size: 20px;
   margin-left: 50%;
   margin-top: 20px;
   transform: translate(-50%);
   position: relative;
-  /* margin-top: 50px; */
 }
 
 .topnav a::after{
@@ -272,8 +247,8 @@ background-image: linear-gradient(black, grey);
 }
 
 .iconimg{
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
   margin-left: 50%;
   margin-top: 10px;
@@ -284,4 +259,131 @@ background-image: linear-gradient(black, grey);
 .iconimg:hover{
   opacity: 0.8;
   cursor: pointer;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+background-color: black;
+  background-repeat: no-repeat;
+  margin:0;
+  background-attachment: fixed;
+  background-position: top right;
+  overflow: overlay;
+}
+
+video {
+  width: 100%;
+}
+
+.video1 {
+position: relative;
+}
+
+.video1 .videotext {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  width: auto;
+}
+.colpad{
+  padding:2px;
+
+}
+
+.img1{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  padding:0;
+
+}
+
+
+.hovereffect1{
+  width:100%;
+  display: inline-block;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+
+a:hover{
+  color:white;
+  text-decoration: none;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  bottom: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: 1s;
+}
+
+.hovereffectimg{
+  transition: 0.6s;
+}
+
+.img1:hover{
+  opacity: 0.4;
+  transition: 0.6s;
+}
+
+.hovereffect1:hover .overlay{
+  opacity: 1;
+}
+
+.textdecoration2{
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  margin-top: auto;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, 0%);
+}
+
+.aboutme1{
+  width: 100%;
+  max-height: auto;
+  overflow: auto;
+}
+
+
+.aboutme{
+width: 100%;
+height: auto;
+background-image: linear-gradient(grey, black);
+
+
+}
+
+
+.biotext{
+  font-size: 30px;
+  font-family: 	helvetica;
+  color:white;
+  text-align: left;
+  padding-top: 20px;
+  margin-right: 15px;
 }

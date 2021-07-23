@@ -9,11 +9,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="1css.css">
-<link rel="stylesheet" href="2css.css">
+<script src="script.js"> </script>
 
 
 
-  <title>JANKOVSKY HOME</title>
+  <title>JANKOVSKY MUSIC PRODUCTION</title>
 
 </head>
 
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
-                          <a href="https://open.spotify.com/user/yjdetkdiehrudxnrpyv73o5yh?si=_Qx2oEIGTsC1pcYqeyU0Tw" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
+                          <a href="https://open.spotify.com/artist/780CxYEStud0WvyDJzbljB?si=h1rnIGtlTH6mfL8IRnDAfg" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
                         </div>
 
 
@@ -69,60 +69,86 @@
 
 <div class="video1">
   <video [muted]="true" autoplay playsinline loop muted>
-    <!-- <source src="notext.mp4" type="video/mp4"> -->
+    <source src="notext.mov">
   </video>
-  <div class="videotext">
+  <!-- <div class="videotext">
     <h1 class="h1text">Welcome.</h1>
-  </div>
+  </div> -->
 </div>
 
-<h3 id="mymusic" style="color:white; font-family: Roboto; margin-left: 10px;">Commercial work 2020-2021</h3>
+<h3  style="color:white; font-family: impact; margin-left: 10px;">Commercial work</h3>
 <br>
+
+<!--
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1092141058%3Fsecret_token%3Ds-6G0vjkV1v9z&color=%23ff003d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/iamjankovsky" title="IAMJANKOVSKY" target="_blank" style="color: #cccccc; text-decoration: none;">IAMJANKOVSKY</a> · <a href="https://soundcloud.com/iamjankovsky/emperors1/s-6G0vjkV1v9z" title="emperors" target="_blank" style="color: #cccccc; text-decoration: none;">emperors</a></div>
+
+<div>
+  <img id="emperorsimg" src="files/emperors.jpg">
+    <audio id="igemperors" preload="auto">
+      <source src="files/mp3/emperors.mp3" type="audio/mpeg">
+    </audio>
+</div> -->
+
+
+
 
 <div class="container-fluid">
 <div class="row">
 
 <div class="col-lg-3 col-md-3 colpad">
     <div class="hovereffect1">
-<iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/4HgvpFuoNF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="mymusic" class="img1" width="560" height="315" src="https://www.youtube.com/embed/4HgvpFuoNF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="overlay">
-      <!-- <a class="textdecoration" href="https://youtu.be/4HgvpFuoNF8" target="_blank"><img class="hovereffectimg" src="pics/youtubeglow.png"></a> -->
       <p class="textdecoration2">Credits: songwriter, producer, mix engineer</p>
     </div>
   </div>
 </div>
 
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 col-md-3 colpad">
+    <div class="hovereffect1">
+      <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/D7wX7W_jUts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="overlay">
+    <p class="textdecoration2">Credits: producer, mix engineer</p>
+  </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-3 col-md-3 colpad">
+      <div class="hovereffect1">
+<iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/eNFA0G2fbIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="overlay">
+      <p class="textdecoration2">Credits: producer, mix engineer</p>
+    </div>
+      </div>
+    </div>
+
+
 <div class="col-lg-3 col-md-3 colpad">
     <div class="hovereffect1">
 <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/65ljoG695J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/65ljoG695J8" target="_blank">Listen on YouTube</a> -->
     <p class="textdecoration2">Credits: songwriter, producer</p>
   </div>
     </div>
         </div>
 
-<div class="col-lg-3 col-md-3 colpad">
-    <div class="hovereffect1">
-      <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/im3DITHNnNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/im3DITHNnNA" target="_blank">Listen on YouTube</a> -->
-    <p class="textdecoration2">Credits: producer, mix engineer</p>
-  </div>
-    </div>
-        </div>
 
-<div class="col-lg-3 col-md-3 colpad">
+
+<!-- <div class="col-lg-3 col-md-3 colpad">
     <div class="hovereffect1">
       <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/ZuiUYR21rgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/ZuiUYR21rgo" target="_blank">Listen on YouTube</a> -->
     <p class="textdecoration2">Credits: songwriter, producer, mix engineer, mastering</p>
   </div>
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 <div class="container-fluid">
 <div class="row">
@@ -130,18 +156,19 @@
     <div class="hovereffect1">
       <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/o8jtYbEOEaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/o8jtYbEOEaU" target="_blank">Listen on YouTube</a> -->
     <p class="textdecoration2">Credits: songwriter, producer, mix engineer</p>
   </div>
     </div>
   </div>
 
-<div class="col-lg-3 col-md-3 colpad">
+
+
+
+
+<!-- <div class="col-lg-3 col-md-3 colpad">
     <div class="hovereffect1">
       <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/0_6MnZF9RwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <!-- <img class="img1" src="pics/unoparadise.png" alt="beach"> -->
   <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/0_6MnZF9RwM" target="_blank">Listen on YouTube</a> -->
     <p class="textdecoration2">Credits: songwriter, producer, mix engineer, mastering</p>
   </div>
     </div>
@@ -151,7 +178,6 @@
     <div class="hovereffect1">
       <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/V4cjGyCKXc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/V4cjGyCKXc0" target="_blank">Listen on YouTube</a> -->
     <p class="textdecoration2">Credits: producer, mix engineer, mastering</p>
   </div>
     </div>
@@ -162,29 +188,46 @@
       <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/VcbYxM1t67Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <div class="overlay">
-    <!-- <a class="textdecoration" href="https://youtu.be/VcbYxM1t67Y" target="_blank">Listen on YouTube</a> -->
     <p class="textdecoration2">Credits: singer, songwriter, producer, mix engineer, mastering</p>
   </div>
     </div>
-  </div>
+  </div> -->
 </div>
 </div>
 <br><br>
-
-<h3 id="mymusic" style="color:white; font-family: Roboto; margin-left: 10px;">Jankovsky album</h3>
+<h3  style="color:white; font-family: impact; margin-left: 10px;">My own repertoire</h3>
 <br>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-3 col-md-3 colpad">
-      <div class="hovereffect1">
-<iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/ThlS8JHeSH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="overlay">
+<div class="col-lg-3 col-md-3 colpad">
+    <div class="hovereffect1">
+<iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/PVITNVYrdMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="overlay">
+    <p class="textdecoration2">Credits: creator, vocals, mixing</p>
+  </div>
+    </div>
+  </div>
 
-        <p class="textdecoration2">Credits: artist, producer, mix engineer</p>
+<div class="col-lg-3 col-md-3 colpad">
+    <div class="hovereffect1">
+      <iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/ThlS8JHeSH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="overlay">
+    <p class="textdecoration2">Credits: creator, vocals, mixing</p>
+  </div>
+    </div>
+  </div>
+
+
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-3 col-md-3 colpad">
+        <div class="hovereffect1">
+<iframe class="img1" width="560" height="315" src="https://www.youtube.com/embed/u2q0YvNi92M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="overlay">
+        <p class="textdecoration2">Credits: creator, vocals, mixing</p>
+      </div>
         </div>
       </div>
-    </div>
+
   </div>
 </div>
 
@@ -195,48 +238,30 @@
 
 
 <div class="parallax1"></div>
-<div class="aboutme">
-  <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-1 col-sm-0"></div>
-  <div class="col-md-4 col-sm-6">
-  <img class="bioimg" src="pics/iggybio1.jpg" alt="photo">
-    <img class="bioimg" src="pics/iggybio2.jpg" alt="photo">
-    <img class="bioimg" style="margin-bottom: 20px" src="pics/iggybio3.png" alt="photo">
-</div>
-<div class="col-md-6 col-sm-6">
-  <h1 id="about" style="color:white; font-family:'Open Sans', sans-serif;">INTRODUCTION</h1><br>
+  <div class="aboutme">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+          <div class="col-md-4 col-sm-6">
+            <img class="bioimg" src="pics/iggybio2.jpg" alt="photo">
+              <img class="bioimg" style="margin-bottom: 20px" src="pics/iggybio3.png" alt="photo">
+          </div>
 
-<div class="aboutme1">
-  <p class="biotext">JANKOVSKY (Igor Jankovski, also known as Iggy Jai) is an Estonian music producer, musician, former drummer for Ebony Bones. He worked and studied in London, UK from 2010-2020. He's a graduate of Abbey Road Institute in London (Advanced music production and sound engineering) and University of Tallinn BA (Orchestral conducting).
+          <div class="col-md-6 col-sm-6">
+            <h1 id="about" style="color:white; font-family: Helvetica">INTRODUCTION</h1><br>
 
-​ </p>
+          <div class="aboutme1">
+            <p class="biotext">JANKOVSKY (ALSO KNOWN AS IGGY JAI) IS AN ESTONIAN MUSIC PRODUCER, SONGWRITER, MIXING ENGINEER, FORMER DRUMMER FOR EBONY BONES. HE STUDIED AND WORKED IN LONDON FROM 2010-2020. HE'S A GRADUATE OF ABBEY ROAD INSTITUTE, LONDON (ADVANCED MUSIC PRODUCTION AND SOUND ENGINEERING) AND UNIVERSITY OF TALLINN BA (ORCHESTRAL CONDUCTING).</p>
+              <p class="biotext">JANKOVSKY SPECIALISES IN SOUND DESIGN, PRODUCTION, ARRANGEMENT, RECORDING AND MIXING.</p>
+                <br>
 
-<p class="biotext">Not only did he learn the keys to a successful song in any genre be it pop, indie, hip hop or an entire movie score, he also gained priceless contacts reaching far and wide within the industry who are responsible for artists such as 'The Verve', 'U2', 'Sam Smith', 'The Cult', 'Dido'. JANKOVSKY worked with singers from 'Let it Shine', 'X Factor UK', 'BBC Radio 1' as well as companies such as VICE and Red Bull Academy. In addition to his production work, he has toured the world and performed on stages in USA, China, Russia, Europe, Australia and New Zealand, headlining venues such as Le Trianon (FRA), Berghain (GER), KOKO (UK), La Machine (FRA), Splore (NZ).
-
-</p>
-<p class="biotext">Up until recently JANKOVSKY has been working with bespoke artists by a private appointment only but now he's looking to expand and provide services to the broader public. His mission is to help up and coming artists to get the best out of their performance by crafting a unique and definitive sound for their songs, as well as presenting their finished product to record labels. He specialises in sound design, production, arrangement, vocal editing, recording, mixing and mastering.
-
-​​
-
-He has a full production studio at his disposal. He works in Pro Tools and Logic.</p>
-<p class="biotext">
-As an artist/producer, he has discovered that music can be sincere when it’s guided by the true principles of the universe and nature. The greatest philosophers, composers, architects, representatives of art were inspired by the divine beauty and the meaning of life, whose ideas still find expression in architecture and visual arts, heritage and exemplary artistry that they left us.
-</p>
-<br>
-<p style="font-family:Brush Script MT; color: white; font-size: 25px; text-align: right;">Looking forward to working with you.</p>
-<p style="font-family:Brush Script MT; color: white; font-size: 25px; text-align: right;">Jankovsky</p>
+          </div>
+        </div>
+      <div class="col-md-1 col-sm 0"></div>
+    </div>
+  </div>
 </div>
 
-
-
-
-
-</div>
-<div class="col-md-1 col-sm 0"></div>
-</div>
-</div>
-</div>
 
 
 
@@ -267,19 +292,19 @@ As an artist/producer, he has discovered that music can be sincere when it’s g
                       </div>
 
                       <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
-                            <a href="https://open.spotify.com/user/yjdetkdiehrudxnrpyv73o5yh?si=_Qx2oEIGTsC1pcYqeyU0Tw" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
+                            <a href="https://open.spotify.com/artist/780CxYEStud0WvyDJzbljB?si=h1rnIGtlTH6mfL8IRnDAfg" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
                           </div>
 
 
                   <div class="col-md-4 col-sm-1 col-xs-0 topnav">
-                  <a href="mailto:iggyjai@gmail.com" style="color: tomato;">Book a session</a>
+                  <a href="mailto:iggyjai@gmail.com" style="color: tomato;">Get in touch</a>
 
                   </div>
 
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p style="width: 100%; height: auto; font-family: Roboto; color: white; font-size: 10px; text-align: center;">©JANKOVSKY. All rights reserved 2021</p>
+                    <p style="width: 100%; height: auto; font-family: Helvetica; color: white; font-size: 10px; text-align: center;">©JANKOVSKY. All rights reserved 2021</p>
                   </div>
                 </div>
               </div>
