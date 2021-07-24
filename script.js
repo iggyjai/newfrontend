@@ -8,24 +8,28 @@ $( document ).ready(function() {
   $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
 
-  $(".thumbnail-container").hover(function() {
-    var track = $(this).children("audio");
-    $(this).children(".thumbnail-color").delay(50).show();
-    $(this).css("padding-right", "-300px");
-    var domToObject = $(this);
-    changeNowPlaying(domToObject);
-    if(muted == false) {
-      track.get(0).load();
-      track.get(0).play();
-    } else {
-      //Give user feedback that track is muted
-    }
-  }, function() {
-    var track = $(this).children("audio");
-    $(this).css("padding-right", "0px");
-    $(this).children(".thumbnail-color").hide();
-    track.get(0).pause();
-  });
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    // some code..
+   } else {
+    $(".thumbnail-container").hover(function() {
+      var track = $(this).children("audio");
+      $(this).children(".thumbnail-color").delay(50).show();
+      $(this).css("padding-right", "-300px");
+      var domToObject = $(this);
+      changeNowPlaying(domToObject);
+      if(muted == false) {
+        track.get(0).load();
+        track.get(0).play();
+      } else {
+        //Give user feedback that track is muted
+      }
+    }, function() {
+      var track = $(this).children("audio");
+      $(this).css("padding-right", "0px");
+      $(this).children(".thumbnail-color").hide();
+      track.get(0).pause();
+    });
+   }
 
 
   $(window).scroll(function() {
