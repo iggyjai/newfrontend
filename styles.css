@@ -427,7 +427,7 @@ background-image: linear-gradient(grey, black);
 }
 
 #now-playing-container {
-  width:500px;
+  min-width:500px;
   min-height:150px;
   border-style:none;
   background-color:black;
@@ -447,20 +447,28 @@ background-image: linear-gradient(grey, black);
 #np-container {
   display:flex;
   flex-direction: column;
-  align-items:center;
   justify-content:space-around;
 }
 
 .fixed-np {
   position:fixed;
   top:20px;
-  left:50%;
-  transform:translate(-50%, 0);
   z-index:4;
 }
 
 .hidden-np {
   visibility:hidden;
+}
+
+.hidden-track-info, .hidden-roles-info {
+  display:none;
+}
+
+.np-text {
+  color:grey;
+  font-family: impact;
+  font-size:25px;
+  margin-left:10px;
 }
 
 

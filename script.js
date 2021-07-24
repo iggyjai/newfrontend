@@ -3,6 +3,7 @@ var muted = true;
 $( document ).ready(function() {
   var stickyTop = $('.sticky').offset().top;
   var stickyBottom = $(".parallax1").offset().top;
+  var instructions = $("#np-container").find("#mute-instruc").html();
 
   $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
@@ -11,8 +12,9 @@ $( document ).ready(function() {
     var track = $(this).children("audio");
     $(this).children(".thumbnail-color").delay(50).show();
     $(this).css("padding-right", "-300px");
+    var domToObject = $(this);
+    changeNowPlaying(domToObject);
     if(muted == false) {
-      //Change Now Playing Content
       track.get(0).load();
       track.get(0).play();
     } else {
@@ -50,18 +52,23 @@ $( document ).ready(function() {
     toggleVolume();
   });
 
-  //Unmute Text Button Over thumnails
-    //Use toggleVolume();
+  function changeNowPlaying(data) {
+    var artistTrackRoles = $(data).find(".hidden-info").html();
+    console.log(artistTrackRoles);
+    $("#np-container").empty();
+    $("#np-container").append(instructions, artistTrackRoles);
+    $("#np-container").find("p").show();
+  }
+
+  function toggleVolume() {
+    muted = !muted;
+    if(muted) {
+      $("#unmuted-icon").hide();
+      $("#muted-icon").show();
+    } else {
+      $("#unmuted-icon").show();
+      $("#muted-icon").hide();
+    }
+  }
 
 });
-
-function toggleVolume() {
-  muted = !muted;
-  if(muted) {
-    $("#unmuted-icon").hide();
-    $("#muted-icon").show();
-  } else {
-    $("#unmuted-icon").show();
-    $("#muted-icon").hide();
-  }
-}
