@@ -393,21 +393,18 @@ background-image: linear-gradient(grey, black);
 /* Codie's Work Begins Here- Musical Thumbnails  */
 
 #music-tiles {
-  width:80%;
   max-width:1500px;
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content:center;
   align-items:center;
   margin: 0 auto;
 }
 
 .thumbnail-container {
   padding:0;
-  margin:1% 0;
-  margin-right: clamp(0.5%, 0.5%, 0.5%);
-  margin-left: clamp(0.5%, 0.5%, 0.5%);
+  margin:10px 10px;
 }
 
 .thumbnail-color {
