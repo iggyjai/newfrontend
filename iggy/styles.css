@@ -397,16 +397,22 @@ background-image: linear-gradient(grey, black);
   flex-direction:row;
   flex-wrap: wrap;
   justify-content:space-around;
+  align-items:center;
 }
 
-.thumbnail-grey {
-  display:none;
-}
-
-.music-thumbnail {
-  margin:15% 0;
+.thumbnail-container {
+  padding:0;
+  margin:5% 0;
   margin-right: min(15px);
   margin-left: min(15px);
+}
+
+.thumbnail-color {
+  width:425px;
+  height:425px;
+  position:relative;
+  left:-420px;
+  margin-right: -400px;
 }
 
 #commercial-head-cont {

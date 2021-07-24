@@ -1,8 +1,17 @@
-var a=document.getElementById("igemperors");
-var imga=document.getElementById("emperorsimg");
+$( document ).ready(function() {
+  $("#unmuted").hide();
+  $("#muted").show();
+  $(".thumbnail-color").hide();
 
-window.addEventListener("load", function() {
-  imga.addEventListener("mouseover" , function() {
-    a.play();
+  $(".thumbnail-container").hover(function() {
+    $(this).children(".thumbnail-color").fadeIn(150);
+    $(this).css("padding-right", "-400px");
+    //Stop Song
+
+    //Play song if unmuted
+  }, function() {
+    $(this).children(".thumbnail-color").fadeOut(150);
+    $(this).css("padding-right", "0px");
+    //Stop Song
   });
 });
