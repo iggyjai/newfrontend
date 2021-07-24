@@ -443,9 +443,6 @@ background-image: linear-gradient(grey, black);
   margin:40px;
 }
 
-#unmuted-icon {
-  display:none;
-}
 
 #np-container {
   display:flex;

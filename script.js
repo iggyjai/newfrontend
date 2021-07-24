@@ -1,12 +1,10 @@
-
+var muted = true;
 
 $( document ).ready(function() {
-  var muted = false;
   var stickyTop = $('.sticky').offset().top;
   var stickyBottom = $(".parallax1").offset().top;
 
-  $("#unmuted").hide();
-  $("#muted").show();
+  $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
 
   $(".thumbnail-container").hover(function() {
@@ -42,7 +40,28 @@ $( document ).ready(function() {
     }
   });
 
+  $(".volume-icon") .hover(function() {
+    $(this).css("transform", "scale(1.2)");
+  }, function() {
+    $(this).css("transform", "scale(1)");
+  });
 
+  $(".volume-icon") .click(function() {
+    toggleVolume();
+  });
 
-  //mute functionality toggle
+  //Unmute Text Button Over thumnails
+    //Use toggleVolume();
+
 });
+
+function toggleVolume() {
+  muted = !muted;
+  if(muted) {
+    $("#unmuted-icon").hide();
+    $("#muted-icon").show();
+  } else {
+    $("#unmuted-icon").show();
+    $("#muted-icon").hide();
+  }
+}
