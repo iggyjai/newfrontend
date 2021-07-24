@@ -417,6 +417,7 @@ background-image: linear-gradient(grey, black);
   left:-2%;
   margin-right: -300px;
   padding:0;
+  z-index:3;
 }
 
 .thumbnail-grey {
@@ -425,23 +426,46 @@ background-image: linear-gradient(grey, black);
   padding:0;
 }
 
-#commercial-head-cont {
+#now-playing-container {
+  width:500px;
+  min-height:150px;
+  border-style:none;
+  background-color:black;
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
+  margin: 0 auto;
 }
 
 .volume-icon {
   width:40px;
   height:auto;
   margin:40px;
-  position:absolute;
-  right:3%;
 }
 
 #unmuted-icon {
   display:none;
 }
+
+#np-container {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.fixed-np {
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translate(-50%, 0);
+  z-index:4;
+}
+
+.hidden-np {
+  visibility:hidden;
+}
+
 
 
 

@@ -1,7 +1,10 @@
-var muted = false;
 
 
 $( document ).ready(function() {
+  var muted = false;
+  var stickyTop = $('.sticky').offset().top;
+  var stickyBottom = $(".parallax1").offset().top;
+
   $("#unmuted").hide();
   $("#muted").show();
   $(".thumbnail-color").hide();
@@ -23,6 +26,23 @@ $( document ).ready(function() {
     $(this).children(".thumbnail-color").hide();
     track.get(0).pause();
   });
+
+
+  $(window).scroll(function() {
+    var windowTop = $(window).scrollTop();
+
+    if(windowTop > stickyBottom) {
+      $('.sticky').addClass("hidden-np");
+    }
+    else if (windowTop > stickyTop) {
+      $(".sticky").removeClass("hidden-np");
+      $('.sticky').addClass("fixed-np");
+    } else {
+      $('.sticky').removeClass("fixed-np");
+    }
+  });
+
+
 
   //mute functionality toggle
 });
