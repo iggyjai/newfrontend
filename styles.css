@@ -393,7 +393,7 @@ background-image: linear-gradient(grey, black);
 /* Codie's Work Begins Here- Musical Thumbnails  */
 
 #music-tiles {
-  max-width:1500px;
+  max-width:1400px;
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
