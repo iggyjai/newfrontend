@@ -412,6 +412,8 @@ background-image: linear-gradient(grey, black);
     width:160px;
     height:160px;
     position:relative;
+    top:-155px;
+    left:-5px;
     padding:0;
     z-index:3;
   }
@@ -439,6 +441,8 @@ background-image: linear-gradient(grey, black);
     width:310px;
     height:310px;
     position:relative;
+    top:-305px;
+    left:-5px;
     padding:0;
     z-index:3;
   }
