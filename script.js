@@ -8,9 +8,9 @@ $( document ).ready(function() {
   $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
 
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  //if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     // some code..
-   } else {
+  // } else {
     $(".thumbnail-container").hover(function() {
       var track = $(this).children("audio");
       $(this).children(".thumbnail-color").delay(50).show();
@@ -29,7 +29,7 @@ $( document ).ready(function() {
       $(this).children(".thumbnail-color").hide();
       track.get(0).pause();
     });
-   }
+ //  }
 
 
   $(window).scroll(function() {
