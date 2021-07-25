@@ -442,7 +442,6 @@ background-image: linear-gradient(grey, black);
     width:310px;
     height:310px;
     position:relative;
-    margin-right: -300px;
     padding:0;
     z-index:3;
   }
