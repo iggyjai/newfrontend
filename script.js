@@ -21,7 +21,10 @@ $( document ).ready(function() {
         setAudio = false;
       });
     }
-
+    $(".volume-icon").click(function() {
+      audio.pause();
+      audio.load();
+    });
 
     $(".thumbnail-container").click(function() {
       //alert("hello");
