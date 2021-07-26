@@ -504,9 +504,9 @@ background-image: linear-gradient(grey, black);
 }
 
 
-
-
-
+p, div {
+  color:white;
+}
 
 
 /* Codie's Work Ends Here- Musical Thumbnails  */

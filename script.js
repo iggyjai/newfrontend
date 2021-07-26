@@ -58,7 +58,7 @@ $( document ).ready(function() {
 
   function changeNowPlaying(data) {
     var artistTrackRoles = $(data).find(".hidden-info").html();
-    console.log(artistTrackRoles);
+    //console.log(artistTrackRoles);
     $("#np-container").empty();
     $("#np-container").append(instructions, artistTrackRoles);
     $("#np-container").find("p").show();
