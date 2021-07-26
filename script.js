@@ -35,8 +35,7 @@ $( document ).ready(function() {
 
       if(muted == false) {
         audio.src = track;
-        audio.get(0).load();
-        audio.get(0).play();
+        audio.play();
       } else {
         //Give user feedback that track is muted
       }
