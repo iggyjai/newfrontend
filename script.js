@@ -23,6 +23,7 @@ $( document ).ready(function() {
 
 
     $(".thumbnail-container").click(function() {
+      alert("hello");
       var domToObject = $(this);
       var track = $(this).children("audio").attr("src");
       togglePlaying(domToObject);
