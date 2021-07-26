@@ -16,6 +16,7 @@ $( document ).ready(function() {
 
     if (setAudio) {
       $("#muted-icon") .click(function() {
+        toggleVolume();
         soundEffect.play();
         setAudio = false;
       });
