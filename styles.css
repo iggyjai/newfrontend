@@ -504,7 +504,7 @@ background-image: linear-gradient(grey, black);
 }
 
 
-p, div {
+body {
   color:white;
 }
 
