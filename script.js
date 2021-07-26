@@ -28,6 +28,7 @@ $( document ).ready(function() {
       var domToObject = $(this);
       var track = $(this).children("audio").attr("src");
       $(".thumbnail-color").hide();
+      $(".thumbnail-grey").show();
       togglePlaying(domToObject);
       changeNowPlaying(domToObject);
 
