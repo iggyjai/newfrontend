@@ -12,8 +12,6 @@ $( document ).ready(function() {
     var audio = new Audio();
     var setAudio = true;
     $(".parallax-backdrop").addClass("ios-backdrop");
-
-
     if (setAudio) {
       $("#muted-icon") .click(function() {
         toggleVolume();
@@ -25,12 +23,9 @@ $( document ).ready(function() {
       audio.pause();
       audio.load();
     });
-
     $(".thumbnail-container").click(function() {
-      //alert("hello");
       var domToObject = $(this);
       var track = $(this).find(".audio-source").attr("src");
-      //alert(track);
       $(".thumbnail-color").hide();
       $(".thumbnail-grey").show();
       togglePlaying(domToObject);
@@ -93,7 +88,6 @@ $( document ).ready(function() {
 
   function changeNowPlaying(data) {
     var artistTrackRoles = $(data).find(".hidden-info").html();
-    //console.log(artistTrackRoles);
     $("#np-container").empty();
     $("#np-container").append(instructions, artistTrackRoles);
     $("#np-container").find("p").show();
