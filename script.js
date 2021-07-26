@@ -27,7 +27,7 @@ $( document ).ready(function() {
       //alert("hello");
       var domToObject = $(this);
       var track = $(this).find(".audio-source").attr("src");
-      alert(track);
+      //alert(track);
       $(".thumbnail-color").hide();
       $(".thumbnail-grey").show();
       togglePlaying(domToObject);
