@@ -24,9 +24,10 @@ $( document ).ready(function() {
 
 
     $(".thumbnail-container").click(function() {
-      alert("hello");
+      //alert("hello");
       var domToObject = $(this);
       var track = $(this).children("audio").attr("src");
+      $(".thumbnail-color").hide();
       togglePlaying(domToObject);
       changeNowPlaying(domToObject);
 
