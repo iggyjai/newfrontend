@@ -9,7 +9,7 @@ $( document ).ready(function() {
   $(".thumbnail-color").hide();
 
   if( /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-    const audio = new Audio();
+    var audio = new Audio();
     var setAudio = true;
     $(".parallax-backdrop").addClass("ios-backdrop");
 
