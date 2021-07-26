@@ -11,9 +11,10 @@ $( document ).ready(function() {
   if( /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
     $(".parallax-backdrop").addClass("ios-backdrop");
   } //else {
-    
+
     $(".thumbnail-container").hover(function() {
       var track = $(this).children("audio");
+      $(this).children(".thumbnail-grey").delay(50).hide();
       $(this).children(".thumbnail-color").delay(50).show();
       $(this).css("padding-right", "-300px");
       var domToObject = $(this);
@@ -28,6 +29,7 @@ $( document ).ready(function() {
       var track = $(this).children("audio");
       $(this).css("padding-right", "0px");
       $(this).children(".thumbnail-color").hide();
+      $(this).children(".thumbnail-grey").show();
       track.get(0).pause();
     });
  //  }
