@@ -8,9 +8,10 @@ $( document ).ready(function() {
   $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
 
-  //if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    // some code..
-  // } else {
+  if( /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+    $(".parallax-backdrop").addClass("ios-backdrop");
+  } //else {
+    
     $(".thumbnail-container").hover(function() {
       var track = $(this).children("audio");
       $(this).children(".thumbnail-color").delay(50).show();

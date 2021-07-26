@@ -183,16 +183,13 @@
 
 .parallax1 {
   background-image: url("pics/36.jpg");
-  width:100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .parallax2 {
   background-image: url("pics/45.jpg");
+}
+
+.parallax-backdrop {
   width:100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -201,12 +198,16 @@
   background-attachment: fixed;
 }
 
+.ios-backdrop {
+  background-attachment:scroll;
+}
 
-@media screen and (max-width:480px) {
+
+/*@media screen and (max-width:480px) {
   .parallax1, .parallax2 {
     background-attachment:scroll;
   }
-}
+}*/
 
 
 /* .responsive{
