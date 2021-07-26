@@ -14,7 +14,7 @@ $( document ).ready(function() {
     $(".parallax-backdrop").addClass("ios-backdrop");
 
 
-    if (setaudio) {
+    if (setAudio) {
       $("#muted-icon") .click(function() {
         soundEffect.play();
         setAudio = false;
