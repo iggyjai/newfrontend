@@ -9,15 +9,40 @@ $( document ).ready(function() {
   $(".thumbnail-color").hide();
 
   if( /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+    const audio = new Audio();
+    var setAudio = true;
     $(".parallax-backdrop").addClass("ios-backdrop");
-  } //else {
 
-    $(".thumbnail-container").hover(function() {
-      var track = $(this).children("audio");
-      $(this).children(".thumbnail-grey").delay(50).hide();
-      $(this).children(".thumbnail-color").delay(50).show();
-      $(this).css("padding-right", "-300px");
+
+    if (setaudio) {
+      $("#muted-icon") .click(function() {
+        soundEffect.play();
+        setAudio = false;
+      });
+    }
+
+
+    $(".thumbnail-container").click(function() {
       var domToObject = $(this);
+      var track = $(this).children("audio").attr("src");
+      togglePlaying(domToObject);
+      changeNowPlaying(domToObject);
+
+      if(muted == false) {
+        audio.src = track;
+        audio.play();
+      } else {
+        //Give user feedback that track is muted
+      }
+
+
+    });
+  }
+  else {
+    $(".thumbnail-container").hover(function() {
+      var domToObject = $(this);
+      var track = $(this).children("audio");
+      togglePlaying(domToObject);
       changeNowPlaying(domToObject);
       if(muted == false) {
         track.get(0).load();
@@ -26,13 +51,12 @@ $( document ).ready(function() {
         //Give user feedback that track is muted
       }
     }, function() {
+      var domToObject = $(this);
       var track = $(this).children("audio");
-      $(this).css("padding-right", "0px");
-      $(this).children(".thumbnail-color").hide();
-      $(this).children(".thumbnail-grey").show();
+      toggleNotPlaying(domToObject);
       track.get(0).pause();
     });
- //  }
+  }
 
 
   $(window).scroll(function() {
@@ -76,6 +100,15 @@ $( document ).ready(function() {
       $("#unmuted-icon").show();
       $("#muted-icon").hide();
     }
+  }
+  function togglePlaying(elem) {
+    $(elem).children(".thumbnail-grey").delay(50).hide();
+    $(elem).children(".thumbnail-color").delay(50).show();
+  }
+
+  function toggleNotPlaying(elem) {
+    $(elem).children(".thumbnail-color").hide();
+    $(elem).children(".thumbnail-grey").show();
   }
 
 });
