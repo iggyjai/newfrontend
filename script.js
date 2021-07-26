@@ -33,7 +33,8 @@ $( document ).ready(function() {
 
       if(muted == false) {
         audio.src = track;
-        audio.play();
+        audio.get(0).load();
+        audio.get(0).play();
       } else {
         //Give user feedback that track is muted
       }
