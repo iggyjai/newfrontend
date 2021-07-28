@@ -37,6 +37,7 @@ $( document ).ready(function() {
         audio.src = track;
         audio.play();
       } else {
+        $(".unmute-text-btn").hide();
         $(this).find(".unmute-text-btn").show();
       }
 
