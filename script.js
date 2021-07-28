@@ -4,6 +4,8 @@ $( document ).ready(function() {
   var stickyTop = $('.sticky').offset().top;
   var stickyBottom = $(".parallax1").offset().top;
   var instructions = $("#np-container").find("#mute-instruc").html();
+  var unmuteBtn = '<button class="unmute-text-btn">' + $(".unmute-text-btn").html() + '</button>';
+  console.log(unmuteBtn);
 
   $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
@@ -51,13 +53,14 @@ $( document ).ready(function() {
         track.get(0).load();
         track.get(0).play();
       } else {
-        //Give user feedback that track is muted
+        $(this).find(".unmute-text-btn").show();
       }
     }, function() {
       var domToObject = $(this);
       var track = $(this).children("audio");
       toggleNotPlaying(domToObject);
       track.get(0).pause();
+      $(this).find(".unmute-text-btn").hide();
     });
   }
 

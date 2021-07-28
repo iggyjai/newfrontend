@@ -258,8 +258,8 @@
 }
 
 .iconimg{
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   margin-left: 50%;
   margin-top: 10px;
@@ -391,7 +391,8 @@ background-image: linear-gradient(grey, black);
 
 
 .biotext{
-  font-size: 30px;
+  max-width:500px;
+  font-size: 22px;
   font-family: 	helvetica;
   color:white;
   text-align: left;
@@ -417,6 +418,8 @@ background-image: linear-gradient(grey, black);
   display:flex;
   justify-content:center;
   align-items:center;
+  position:relative;
+  align-content:center;
 }
 
 @media screen and (max-width: 480px) {
@@ -468,6 +471,10 @@ background-image: linear-gradient(grey, black);
   .np-text {
     font-size: 25px;
   }
+
+  .biotext {
+    margin: 0 auto;
+  }
 }
 
 
@@ -511,7 +518,7 @@ background-image: linear-gradient(grey, black);
 
 .np-text {
   color:white;
-  font-family: impact;
+  font-family: Helvetica;
   margin-left:10px;
 }
 
@@ -520,5 +527,27 @@ body {
   color:white;
 }
 
+.header {
+  color:white;
+  font-family:impact;
+  font-size:40px;
+  margin-left:30px;
+}
 
+.unmute-text-btn {
+  width:auto;
+  height:15%;
+  display:none;
+  color:white;
+  background-color:black;
+  font-family: Helvetica;
+  font-size:25px;
+  border-style:solid;
+  border-color:white;
+  border-width:3px;
+  position:absolute;
+  top:50%;
+  bottom:50%;
+  z-index:10;
+}
 /* Codie's Work Ends Here- Musical Thumbnails  */
