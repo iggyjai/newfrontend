@@ -37,7 +37,7 @@ $( document ).ready(function() {
         audio.src = track;
         audio.play();
       } else {
-        //Give user feedback that track is muted
+        $(this).find(".unmute-text-btn").show();
       }
 
 
@@ -87,6 +87,11 @@ $( document ).ready(function() {
 
   $(".volume-icon") .click(function() {
     toggleVolume();
+  });
+
+  $(".unmute-text-btn").click(function() {
+    toggleVolume();
+    $(this).hide();
   });
 
   function changeNowPlaying(data) {
