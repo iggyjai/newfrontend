@@ -487,6 +487,7 @@ background-color:black;
   flex-direction: row;
   flex-wrap:wrap;
   margin: 0 auto;
+  z-index:11;
 }
 
 .volume-icon {
