@@ -10,7 +10,7 @@ $( document ).ready(function() {
   $("#unmuted-icon").hide();
   $(".thumbnail-color").hide();
 
-  if( /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+  if( /webOS|iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ) {
     var audio = new Audio();
     var setAudio = true;
     $(".parallax-backdrop").addClass("ios-backdrop");
