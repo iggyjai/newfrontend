@@ -474,6 +474,7 @@ background-color:black;
 
   .biotext {
     margin: 0 auto;
+    min-width:440px;
   }
 }
 
