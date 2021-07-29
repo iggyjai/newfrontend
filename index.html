@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"> </script>
+
+
+
+  <title>JANKOVSKY MUSIC PRODUCTION</title>
+
+</head>
+
+<body>
+
+
+
+  <div class="container-fluid">
+  <div class="row" style="background-color: black;">
+    <div class="col-md-4 col-sm-7 col-xs-0 colpad" style="background-color:black;">
+      <img src="pics/jlogo26.png" width="250px" height="50px" style="margin:10px">
+        </div>
+
+        <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+          <a href="http://www.facebook.com/iggyjai" target="_blank"><img class="iconimg" src="pics/fbicon.png"></a>
+            </div>
+
+            <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+                  <a href="http://www.instagram.com/iamjankovsky" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
+                </div>
+
+                <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+                      <a href="https://www.youtube.com/channel/UCAkIO9t_Q-N5rh3e4ODF8Lw" target="_blank"><img class="iconimg" src="pics/youtube.png"></a>
+                    </div>
+
+                    <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+                          <a href="https://open.spotify.com/artist/780CxYEStud0WvyDJzbljB?si=h1rnIGtlTH6mfL8IRnDAfg" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
+                        </div>
+
+
+
+<div class="col-md-4 col-sm-1 col-xs-0 colpad"></div>
+
+    <div class="col-md-1">
+      <nav>
+        <div id="menuToggle">
+          <input id="myCheck" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+          <li><a onclick="myFunction()" href="#mymusic">commercial work</a></li>
+            <li><a onclick="myFunction()" href="#about"><li>biography</a></li>
+            <li><a href="mailto:iggyjai@gmail.com"><li>contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+  </div>
+
+
+<div class="video1">
+  <video [muted]="true" autoplay playsinline loop muted>
+    <source src="videos/notext.mov">
+  </video>
+  <!-- <div class="videotext">
+    <h1 class="h1text">Welcome.</h1>
+  </div> -->
+</div>
+
+<!--Codie's Work Starts Here- Musical Thumbnails-->
+<h3 id="mymusic" class="header">COMMERCIAL WORK</h3>
+
+<div id="now-playing-container" class="sticky">
+  <img id="muted-icon" class="volume-icon" src="pics/muted.svg">
+  <img id="unmuted-icon" class="volume-icon" src="pics/unmuted.svg">
+  <div id="np-container">
+    <p id="mute-instruc">Click the Speaker to Enable Audio</p>
+    <p id="now-playing" class="np-text">Artist Name- &#34;Track Name&#34;</p> <!--Artist- "Track"-->
+    <p id="producing roles" class="np-text">Mixer, Producer</p> <!--Role, Role-->
+  </div>
+</div>
+<br>
+
+<div id="music-tiles">
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/emperors-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/emperors.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/emperors.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">Emperors- "We Are the Emperors"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/vicmay-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/vicmay.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/vicmay.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">Vic May- "They Left No Name"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/purpleheart-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/purpleheart.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/purpleheart.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">James H. White- "Purple Heart"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/elisaastrid-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/elisaastrid.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/elisaastrid.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">STFD, Elisa Astrid- "Just Like That"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/zigga-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/zigga.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/zigga.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">ZIGGA- "IDWTAI"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/jkholdon-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/jkholdon.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/jkholdon.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">JANKOVSKY- "Hold On"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/jkher-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/jkher.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/jkher.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">JANKOVSKY- "Her"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/jkvoices-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/jkvoices.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/jkvoices.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">JANKOVSKY- "Voices"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/jkpressure-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/jkpressure.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/jkpressure.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">JANKOVSKY- "Pressure"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/jkchilioi-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/jkchilioi.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/jkchilioi.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">JANKOVSKY- "Chilioi"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="music-thumbnail thumbnail-grey" src="thumbnails/jkmantra-grey.jpg">
+    <img class="music-thumbnail thumbnail-color" src="thumbnails/jkmantra.jpg">
+    <button class="unmute-text-btn">Unmute</button>
+    <audio class="myAudio">
+      <source class="audio-source" src="mp3/jkmantra.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <div class="hidden-info">
+      <p class="hidden-track-info np-text">JANKOVSKY- "Love Mantra"</p>
+      <p class="hidden-roles-info np-text">Mixer, Producer</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!--Codie's Work End's Here-->
+
+
+<div class="parallax1 parallax-backdrop"></div>
+<div class="empty-parallax"></div>
+
+<div id="about" class="aboutme">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-4 col-sm-6">
+          <img class="bioimg" src="pics/iggybio2.jpg" alt="photo">
+            <img class="bioimg" style="margin-bottom: 20px" src="pics/iggybio3.png" alt="photo">
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <h1 class="header">BIOGRAPHY</h1><br>
+
+        <div class="aboutme1">
+          <p class="biotext">Jankovsky is an Music Producer, Songwriter, Mixing Engineer and former Drummer for Ebony Bones. Raised in Estonia, Jankovsky found his passion for music after being gifted vinyl records by his uncle. He went on to learn the drums, and later earned degrees from Abbey Road Institute in London (Advanced Music Production & Sound Engineering) and University of Tallinn (Orchestral Conducting). </p>
+            <p class="biotext">Jankovsky specializes in sound design, production, arrangement, recording and mixing. His music is most appropriately described as electronic pop or electro-pop, with some acoustic elements. He has worked with big industry names like Ebony Bones, Martin “Youth” Glover (producer of “Bitter Sweet Symphony” by The Verge), The Cult, Bananarama, Dido, and more. </p>
+              <br>
+
+        </div>
+      </div>
+    <div class="col-md-1 col-sm 0"></div>
+  </div>
+</div>
+
+
+
+
+
+<div class="parallax2 parallax-backdrop"></div>
+<div class="empty-parallax"></div>
+
+
+<div class="container-fluid" style="width:100%;height:100px; background-color: black">
+    <div class="row">
+        <div class="col-md-4 col-sm-7 col-xs-0">
+          <img src="pics/jlogo26.png" width="250px" height="50px" style="margin:20px">
+          </div>
+          <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+            <a href="http://www.facebook.com/iggyjai" target="_blank"><img class="iconimg" src="pics/fbicon.png"></a>
+              </div>
+
+              <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+                    <a href="http://www.instagram.com/iamjankovsky" target="_blank"><img class="iconimg" src="pics/instaicon.png"></a>
+                  </div>
+
+                  <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+                        <a href="https://www.youtube.com/channel/UCAkIO9t_Q-N5rh3e4ODF8Lw" target="_blank"><img class="iconimg" src="pics/youtube.png"></a>
+                      </div>
+
+                      <div class="col-md-1 col-sm-1 col-xs-3 colpad" style="background-color:black;">
+                            <a href="https://open.spotify.com/artist/780CxYEStud0WvyDJzbljB?si=h1rnIGtlTH6mfL8IRnDAfg" target="_blank"><img class="iconimg" src="pics/spotify.png"></a>
+                          </div>
+
+
+                  <div class="col-md-4 col-sm-1 col-xs-0 topnav">
+                  <a href="mailto:iggyjai@gmail.com" style="color: tomato;">Get in touch</a>
+
+                  </div>
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p style="width: 100%; height: auto; font-family: Helvetica; color: white; font-size: 10px; text-align: center;">©JANKOVSKY. All rights reserved 2021</p>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+  function myFunction(){
+    document.getElementById('myCheck').checked = false;
+  }
+
+$(function(){
+  var span = $(".menuToggle");
+  $(window).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+
+        if(scrollTop>1250){
+        $(".parallax1").css("opacity", 0 + $(window).scrollTop()/ 2500);
+}
+        $(".parallax2").css("opacity", 0 + $(window).scrollTop()/ 2500);
+
+     });
+   });
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
