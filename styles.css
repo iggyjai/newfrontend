@@ -552,4 +552,8 @@ body {
   bottom:50%;
   z-index:10;
 }
+
+#now-playing-container {
+  max-width:100vw;
+}
 /* Codie's Work Ends Here- Musical Thumbnails  */
